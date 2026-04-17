@@ -104,6 +104,24 @@
       border-radius: 30px;
       text-decoration: none;
     }
+    .image-row {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .image-row figure {
+      flex: 0 1 calc(33.333% - 11px);
+      text-align: center;
+      margin: 0;
+    }
+
+    .image-row img {
+      width: 100%;
+      height: auto;
+    }
   </style>
 
   <header>
@@ -117,23 +135,23 @@
       </ul>
     </nav>
   </header>
-
-  <main class="main-content">
-    <section id="home" class="wrap">
+  <section id="home" class="wrap">
       <h1>哈囉</h1>
-      <h2>這是動物</h2>
-      <img src="img/Hi.jfif" alt="動物圖片" width="500">
-      <p>這是動物</p>
-    </section>
-
-    <section class="wrap">
-      <img src="img/1.jfif" alt="火腿圖片" width="500">
-      <p>這是火腿</p>
-    </section>
-
-    <section class="wrap">
-      <img src="img/2.png" alt="橡皮擦圖片" width="500">
-      <p>這是橡皮擦</p>
+      <h2>貓蟲</h2>
+      <div class="image-row">
+        <figure>
+          <img src="img/Hi.jfif" alt="動物圖片">
+          <figcaption>動物</figcaption>
+        </figure>
+        <figure>
+          <img src="img/1.jfif" alt="火腿圖片">
+          <figcaption>火腿</figcaption>
+        </figure>
+        <figure>
+          <img src="img/2.png" alt="橡皮擦圖片">
+          <figcaption>橡皮擦</figcaption>
+        </figure>
+      </div>
     </section>
 
     <section class="wrap">
