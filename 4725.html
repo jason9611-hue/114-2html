@@ -4,9 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewpoint" content="width=device"
         <title>
-          我的世界  
+         
         </title>
         <link href="style.css" rel="stylesheet">
+        <script src="toxic-soup.js"></script>
         <script>
           function toggleInfo(id) {
             const infoBox = document.getElementById(id);
@@ -14,12 +15,12 @@
           }
         </script>
         <header>
-  <img src="img/images.png" alt="我的世界" class="header-image">
+  <img src="img/original.webp" alt="我的世界" class="header-image">
   <nav>
     <ul>
-      <li><a href="4725.html">HOME</a></li>
+      <li><a href="4725.html">回首頁</a></li>
       <li><a href="about.html">介紹</a></li>
-      <li><a href="#">Draw</a></li>
+      <li><a href="draw.html">最新消息</a></li>
       <li><a href="#">Snake</a></li>
       <li><a href="#">SNS</a></li>
     </ul>
@@ -29,25 +30,37 @@
 <body>
 <aside class="floating-sidebar">
   <nav class="my-favorites">
-    <h2>我的最愛清單 (Favorites)</h2>
+    <h2>及時天氣</h2>
     <ul>
-      <li><a href="#">⭐ 療癒系：水豚 (Capybara)</a></li>
-      <li><a href="#">🎨 創作：插畫 (Illustration)</a></li>
-      <li><a href="#">🎮 遊戲：貪食蛇 (Snake Game)</a></li>
-      <li><a href="#">🍜 食物：拉麵 (Ramen)</a></li>
+      <li><a href="#">24°C 多雲時陰</a></li>
+      <li><a href="#">降雨機率：10%</a></li>
+      <li><a href="#">濕度：62%</a></li>
+      <li><a href="#">風速：16 公里/時</a></li>
     </ul>
   </nav>
   <nav class="status-box">
-    <h2>目前狀態 (Current Status)</h2>
-    <ul>
-      <li>正在努力學習：<strong>Flexbox 佈局</strong> (Layout)</li>
-      <li>目前心情：☕ 咖啡因補充中 (Caffeine)</li>
-      <li>
-        <h3>本週金句 (Quote)</h3>
-        <blockquote>「程式碼是我的畫筆。」</blockquote>
-      </li>
-    </ul>
+    <h2>毒雞湯</h2>
+    <div id="toxic-soup-text" style="
+      font-size: 1em;
+      line-height: 1.6;
+      color: #333;
+      padding: 15px;
+      background-color: #fff8f0;
+      border-radius: 4px;
+      min-height: 60px;
+      display: flex;
+      align-items: center;
+      font-style: italic;
+      animation: fadeInOut 1s ease-in-out;
+    "></div>
   </nav>
+  <style>
+    @keyframes fadeInOut {
+      0% { opacity: 0; }
+      50% { opacity: 1; }
+      100% { opacity: 1; }
+    }
+  </style>
 </aside>
 
 <div class="images-gallery">
@@ -75,7 +88,7 @@
 
   <div class="image-card">
     <div class="image-box" onclick="toggleInfo('info3')">
-      <img src="img/2.png" alt="這是橡皮擦">
+      <img src="img/images.png" alt="這是橡皮擦">
     </div>
     <div id="info3" class="info-box">
       <h2>這是橡皮擦</h2>
